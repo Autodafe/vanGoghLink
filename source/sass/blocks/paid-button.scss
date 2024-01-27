@@ -1,0 +1,39 @@
+.paid-button {
+  position: fixed;
+  top: 52%;
+  right: 0;
+
+  padding: 16px 50px 16px 18px;
+
+  font-weight: 600;
+  color: $color-white;
+  text-transform: none;
+
+  border: 1px solid $color-red-orange;
+  border-radius: 8px 0 0 8px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/svg-images/icon-wallet.svg");
+    top: 50%;
+    right: 19px;
+
+    width: 24px;
+    height: 24px;
+
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 32px 64px 32px 19px;
+  }
+}
+
+.paid-button-text {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: inline;
+  }
+}

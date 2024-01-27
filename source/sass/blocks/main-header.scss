@@ -1,0 +1,103 @@
+.main-header {
+  display: flex;
+  padding: 10px;
+
+  &.no-js {
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    justify-content: space-between;
+    padding: 30px 60px;
+  }
+
+  @media (min-width: $vp-1920) {
+    justify-content: space-between;
+    padding: 11px 240px;
+  }
+}
+
+.main-header__navigation {
+  display: flex;
+}
+
+.main-header-login {
+  width: 23px;
+  align-self: center;
+  height: 21px;
+  background-image: url("/img/svg-images/user-login-avatar.svg");
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: $vp-1200) {
+    display: none;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  flex-shrink: 0;
+  width: 199px;
+  height: 43px;
+  margin: auto auto auto 0;
+
+  @media (min-width: $vp-768) {
+    margin-right: auto;
+  }
+
+  @media (min-width: $vp-1920) {
+    margin-right: 97px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+  }
+}
+
+.main-header__toggle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 15%;
+
+  @media (min-width: $vp-1200) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 3px $color-roman-coffee solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+.main-header__button {
+  margin: auto 0;
+  padding: 9px 23px;
+}

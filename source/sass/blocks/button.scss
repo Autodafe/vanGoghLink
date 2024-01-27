@@ -1,0 +1,37 @@
+.button {
+  display: block;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ff-inter;
+  color: $color-white;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 8px;
+
+  background-color: $color-red-orange;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 3px $medium-sea-green solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    color: $color-white;
+
+    background-color: $color-whisper-standart;
+    cursor: default;
+  }
+}

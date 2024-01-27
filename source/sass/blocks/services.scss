@@ -1,0 +1,135 @@
+.services {
+  padding: 60px 46px 60px 43px;
+
+  @media (min-width: $vp-768) {
+    padding: 40px 64px;
+  }
+
+  @media (min-width: $vp-1920) {
+    padding: 64px 230px;
+  }
+}
+
+.services__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  @media (min-width: $vp-1200) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+
+  @media (min-width: $vp-1200) {
+    gap: 60px;
+  }
+}
+
+.services__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  box-shadow: 0 4px 14px 0 rgba($color-black, 0.12);
+  max-width: 440px;
+}
+
+.services__image-wrapper {
+  margin-bottom: 24px;
+}
+
+.services__item-title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+
+  @media (min-width: $vp-768) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.services__item-description {
+  margin: 0;
+  margin-bottom: 47px;
+  font-size: 16px;
+  line-height: normal;
+  color: rgba($color-black, 0.5);
+  max-width: 330px;
+
+  @media (min-width: $vp-768) {
+    max-width: 274px;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 380px;
+  }
+}
+
+.services__about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $vp-1200) {
+    flex-direction: row;
+  }
+}
+
+.services__about {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 0;
+  }
+}
+
+.services__about-price {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.services__about-description {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.services__about-rub {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.services__about-text {
+  font-size: 30px;
+}
+
+.services__link {
+  text-decoration: none;
+  margin-left: auto;
+  padding: 12px 18px;
+  text-align: center;
+
+  @media (max-width: $vp-1200) {
+    width: 100%;
+  }
+}
