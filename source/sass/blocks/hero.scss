@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url("/img/background/cam-mobile.png");
+  background-image: url("../img/background/cam-mobile.png");
   background-color: $color-white-smoke-darknest;
   background-position: right;
   background-repeat: no-repeat;
@@ -9,13 +9,13 @@
   padding: 60px 43px 60px 45px;
 
   @media (min-width: $vp-768) {
-    background-image: url("/img/background/cam-tablet.png");
+    background-image: url("../img/background/cam-tablet.png");
     padding: 80px 40px 80px 40px;
   }
 
   @media (min-width: $vp-1920) {
     padding: 64px 240px 64px 240px;
-    background-image: url("/img/background/cam-desktop.png");
+    background-image: url("../img/background/cam-desktop.png");
   }
 }
 
@@ -56,62 +56,3 @@
     padding: 13px 96px;
   }
 }
-
-// .hero__about {
-//   position: relative;
-
-//   max-width: 580px;
-//   margin-right: auto;
-//   margin-bottom: 40px;
-//   margin-left: auto;
-//   padding: 10px 0 10px 113px;
-
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: normal;
-
-//   @media (min-width: $vp-1200) {
-//     margin-right: 0;
-//     margin-left: 0;
-//   }
-// }
-
-// .hero__user-photo {
-//   position: absolute;
-//   top: 50%;
-
-//   transform: translateY(-50%);
-
-//   &--one {
-//     left: 0;
-//     z-index: 4;
-//   }
-
-//   &--two {
-//     left: 20px;
-//     z-index: 3;
-//   }
-
-//   &--three {
-//     left: 43px;
-//     z-index: 2;
-//   }
-
-//   &--four {
-//     left: 65px;
-//     z-index: 1;
-//   }
-// }
-
-// .hero__about-description {
-//   margin: 0;
-//   padding: 0;
-
-//   color: $color-dim-gray;
-// }
-
-// .hero__about-link {
-//   font-weight: 500;
-//   color: $color-atomic-tangerine-light;
-//   text-decoration: none;
-// }
